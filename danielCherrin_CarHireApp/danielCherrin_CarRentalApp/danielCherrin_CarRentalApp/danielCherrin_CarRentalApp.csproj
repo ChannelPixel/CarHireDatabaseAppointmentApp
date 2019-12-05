@@ -1,0 +1,166 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{1CB431AF-64FD-4BC9-B659-049ADE943661}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>danielCherrin_CarRentalApp</RootNamespace>
+    <AssemblyName>danielCherrin_CarRentalApp</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Contract.cs" />
+    <Compile Include="Customer.cs" />
+    <Compile Include="frm_AlterContract.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_AlterContract.Designer.cs">
+      <DependentUpon>frm_AlterContract.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_AlterCustomer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_AlterCustomer.Designer.cs">
+      <DependentUpon>frm_AlterCustomer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_AlterVehicle.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_AlterVehicle.Designer.cs">
+      <DependentUpon>frm_AlterVehicle.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_ContractDGV.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_ContractDGV.Designer.cs">
+      <DependentUpon>frm_ContractDGV.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_CreateContract.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_CreateContract.Designer.cs">
+      <DependentUpon>frm_CreateContract.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_CreateCustomer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_CreateCustomer.Designer.cs">
+      <DependentUpon>frm_CreateCustomer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_CreateVehicle.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_CreateVehicle.Designer.cs">
+      <DependentUpon>frm_CreateVehicle.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_CustomerDGV.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_CustomerDGV.Designer.cs">
+      <DependentUpon>frm_CustomerDGV.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_Home.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_Home.Designer.cs">
+      <DependentUpon>frm_Home.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_VehicleDGV.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_VehicleDGV.Designer.cs">
+      <DependentUpon>frm_VehicleDGV.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Vehicle.cs" />
+    <EmbeddedResource Include="frm_AlterContract.resx">
+      <DependentUpon>frm_AlterContract.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_AlterCustomer.resx">
+      <DependentUpon>frm_AlterCustomer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_AlterVehicle.resx">
+      <DependentUpon>frm_AlterVehicle.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_contractDGV.resx">
+      <DependentUpon>frm_ContractDGV.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_CreateContract.resx">
+      <DependentUpon>frm_CreateContract.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_CreateCustomer.resx">
+      <DependentUpon>frm_CreateCustomer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_CreateVehicle.resx">
+      <DependentUpon>frm_CreateVehicle.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_CustomerDGV.resx">
+      <DependentUpon>frm_CustomerDGV.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_Home.resx">
+      <DependentUpon>frm_Home.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_VehicleDGV.resx">
+      <DependentUpon>frm_VehicleDGV.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
